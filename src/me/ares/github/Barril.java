@@ -5,11 +5,14 @@ public class Barril {
 	int capacidad;
 	int contenido;
 
+	
+	//Constructor de barril
 	Barril(int cap, int cont) {
 		capacidad = cap;
 		contenido = cont;
 	}
 
+	//Metodo usado para mover el contenido de los barriles
 	void llenaDesde(Barril origen) {
 		int cantidad = origen.contenido;
 		int libre = this.capacidad - this.contenido;
